@@ -33,8 +33,3 @@ class CGIT_UK_Date_Field extends CMB_Field {
 
     }
 }
-
-add_filter( 'cmb_field_types', function( $cmb_field_types ) {
-    $cmb_field_types['UK_date'] = 'CGIT_UK_Date_Field';
-    return $cmb_field_types;
-} );
