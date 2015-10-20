@@ -77,5 +77,7 @@ add_action('admin_init', 'cgit_wp_cmb_ukdate_installed', 51);
 
 add_filter( 'cmb_field_types', function( $cmb_field_types ) {
     $cmb_field_types['UK_date'] = 'CGIT_UK_Date_Field';
+    $cmb_field_types['UK_datetime'] = 'CGIT_UK_Datetime_Timestamp_Field';
+
     return $cmb_field_types;
 } );
