@@ -42,7 +42,10 @@ register_activation_hook(__FILE__, 'cgit_wp_cmb_ukdate_activate');
  * Check that CustomMetaBoxes plugin is installed
  */
 function cgit_wp_cmb_ukdate_check_cmb() {
-    return is_plugin_active('Custom-Meta-Boxes/custom-meta-boxes.php');
+  if(!is_plugin_active('Custom-Meta-Boxes/custom-meta-boxes.php') && !class_exists('CMB_Meta_Box')){
+      return false;
+  }
+  return true;
 }
 
 
