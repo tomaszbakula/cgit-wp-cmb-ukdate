@@ -1,0 +1,9 @@
+{
+    "name": "castlegateit/cgit-wp-cmb-ukdate",
+    "require": {},
+    "autoload":{
+        "files":[
+          "cgit-wp-cmb-ukdate.php"
+        ]
+      }
+}
