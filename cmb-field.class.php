@@ -14,7 +14,7 @@ class CGIT_UK_Date_Field extends CMB_Field {
 
         wp_enqueue_script( 'cmb-datetime', trailingslashit( CMB_URL ) . 'js/field.datetime.js', array( 'jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'cmb-scripts' ) );
 
-        wp_enqueue_script( 'uk-datepicker', plugins_url('/js/uk-datepicker.js', __FILE__), array('cmb-datetime'));
+        wp_enqueue_script( 'uk-datepicker', get_template_directory_uri() . '/libs/castlegateit/cgit-wp-cmb-ukdate/js/uk-datepicker.js', array('cmb-datetime'));
 
     }
 
@@ -48,7 +48,7 @@ class CGIT_UK_Datetime_Timestamp_Field extends CMB_Field {
 
         wp_enqueue_script( 'cmb-timepicker', trailingslashit( CMB_URL ) . 'js/jquery.timePicker.min.js', array( 'jquery', 'cmb-scripts' ) );
         wp_enqueue_script( 'cmb-datetime', trailingslashit( CMB_URL ) . 'js/field.datetime.js', array( 'jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'cmb-scripts' ) );
-        wp_enqueue_script( 'uk-datepicker', plugins_url('/js/uk-datepicker.js', __FILE__), array('cmb-datetime'));
+        wp_enqueue_script( 'uk-datepicker', get_template_directory_uri() . '/libs/castlegateit/cgit-wp-cmb-ukdate/js/uk-datepicker.js', array('cmb-datetime'));
     }
 
     public function html() { ?>
